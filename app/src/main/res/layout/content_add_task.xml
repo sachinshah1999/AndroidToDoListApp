@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddTask"
+    tools:showIn="@layout/activity_add_task">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/close"
+            android:onClick="closeAddTask"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enterTask"
+            android:layout_marginTop="75dp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/task_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="#ff1da1f2"
+        android:inputType="text"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textCursorDrawable="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/alarm"
+            android:tint="#808080"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="200dp"
+            android:text="Set a Reminder" />
+
+        <!--TODO: Increase slider width-->
+        <Switch
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="322dp"
+            android:layout_marginTop="200dp"
+            android:checked="false"
+            android:theme="@style/SCBSwitch"
+            tools:checked="false" />
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/date_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginRight="175dp"
+        android:editable="false"
+        android:clickable="true"
+        android:backgroundTint="#ff1da1f2"
+        android:focusable="false"
+        android:gravity="center"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/at_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff1da1f2"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+
+    <EditText
+        android:id="@+id/time_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="200dp"
+        android:gravity="center"
+        android:layout_marginRight="200dp"
+        android:editable="false"
+        android:clickable="true"
+        android:backgroundTint="#ff1da1f2"
+        android:focusable="false"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="190dp">
+
+        <TextView
+            android:id="@+id/reminder_day_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/reminder_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="10dp"
+    >
+
+        <TextView
+            android:id="@+id/taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of task"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textStyle="normal" />
+
+    <!--mEditTextName.getText().toString() -->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!--mTextViewDayReminder.getText().toString()-->
+        <TextView
+            android:id="@+id/dueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due task date "
+            android:textStyle="normal"
+            android:gravity="center"
+            android:textColor="#ff1da1f2"/>
+
+        <!--mTextViewTimeReminder.getText().toString()-->
+        <TextView
+            android:id="@+id/dueTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="due time"
+            android:textStyle="normal"
+            android:textColor="#ff1da1f2"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

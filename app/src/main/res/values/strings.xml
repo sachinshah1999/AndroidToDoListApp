@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ss01703_todoList</string>
+    <string name="action_settings">Settings</string>
+    <string name="actionBarTitle">ToDoList</string>
+    <string name="action_search">Search</string>
+    <string name="no_tasks">Nothing to do</string>
+    <string name="title_activity_add_task">AddTask</string>
+    <string name="enterTask">What is to be done?</string>
+    <string name="title_activity_edit_task">EditTask</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_test2">Test2</string>
+    <string name="today">Today</string>
+</resources>
